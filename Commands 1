@@ -1,0 +1,58 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+#Lista de comandos usados para  Conjuntos(SETS)
+
+#Se tiene el siguiente conjunto
+A={1,2,3,4,5,6}
+type(A) #Type(), me indica que tipo pertenece. En este caso A pertenece al grupo de SET(CONJUNTOS)
+#Se tiene la siguiente lista 
+Lista=["a","b","c","d","e"]
+
+#La funcion SET permite cambiar de Lista a Set(conjunto)
+Conjunto=set(Lista) # Lista, pasa a ser un conjunto y se guarda en Conjunto
+type(Conjunto)
+
+#Para poder agregar un valor a un SET, se usa el comando "add"
+Conjunto.add(3) #Agregaos el valor de 3 al conjunto Conjunto
+
+#Si queremos remover un valor de un SET, usamos el comando "remove"
+Conjunto.remove("a")    #Removimos el valor de "a" del conjunto " Conjunto"
+
+#Para comprobar si un elemento pertenece al SET, usamos el siguiente comando "IN"
+"a" in Conjunto # Usamos "in" para indicar si un elemento pertenece al conjunto
+
+#Si tenemos 2 conjuntos, se puede usar el "&" para la union de ambos conjuntos u otros
+Con_1={1,2,3,4,5,6,7,8,9,10} #Conjunto 1 
+Con_2={2,4,6,8,10} # Conjunto 2
+Con_3=Con_1 & Con_2 #Conjunto 3, los valores iguales de Conjunto 1 y Conjunto 2 se guardan en Conjunto 3
+Con_1.union(Con_2) # Permite la union de todos los valores de ambos conjuntos,a comparacion de "&" solo copia los iguales
+
+#Si queremos comprobar si un subconjunto pertenece a otro conjunto usamos el comando "issubset"
+Con_3.issubset(Con_1) # El comando nos indica si un subconjunto pertence o no a otro conjunto(TRUE o FALSE)
+Con_1.issuperset(Con_2) #El comando nos indica si es superconjunto o subconjunto
+
+#Si se quiere saber los elementos unicosa de un conjunto respecto a otro, se usa el comando "difference"
+C_1={3,4,5,6,7,8,10}
+C_2={5,7,}
+C_1.difference(C_2) #Elcomando nos indicara los valores dentro del 1°conjunto,osea fuera de la interseccion
+C_1.intersection(C_2) #Este comando realiza la interseccion de ambos conjuntos
+C_1.union(C_2) #Este comando permite la union de ambos conjuntos
+
+#Para la creacion de diccionario se haze lo siguiente
+Dic={"key1":1,"key2":2,"key3":3,"key4":4} #Creacion de un diccionario
+#Para llamar un valor del diccionario se usa lo siguiente
+Dic["key1"] #Usamos el argumento"key1" y nos dara el valor de ese indicador
+Dic["nuevo valor"]="hola" #Agrega un nuevo valor al diccionario
+del(Dic["key2"]) #Elimina un valor del diccionario
+3 in Dic #Nos permite saber si un valor pertenece a unargumento del diccionario
+Dic.keys() #Este comando nos permite obtener los argumentos del diccionario
+Dic.values() #Este comando nos permite obtener los valores del diccionario
+
+
+
+    
+
